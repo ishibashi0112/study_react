@@ -27,10 +27,9 @@ export default function Home(props){
       {isShow ? <h1>{count}</h1> : null}
       <button onClick={handleClick}>ボタン</button>
       <button onClick={handleDisplay}>{isShow ? "非表示": "表示"}</button>
-
       <input type="text" value={text} onChange={handleChange}/>
       <button onClick={handleAdd}>追加</button>
-  
+
       <ul>
         {array.map((item) => {
           return (
@@ -38,7 +37,7 @@ export default function Home(props){
           )
         })}
       </ul>
-
+      
       <Main page="index" />
       <Footer />
     </div>
