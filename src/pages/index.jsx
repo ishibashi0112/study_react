@@ -15,7 +15,7 @@ export default function Home(props){
     handleChange, 
     handleAdd,
   } = props;
-
+  console.log(array);
   return (
     <div className={styles.container}>
       <Head>
@@ -31,11 +31,11 @@ export default function Home(props){
       <button onClick={handleAdd}>追加</button>
 
       <ul>
-        {array.map((item) => {
+        {/* {array.map((item) => {
           return (
             <li key={item}>{item}</li>
           )
-        })}
+        })} */}
       </ul>
       
       <Main page="index" />
