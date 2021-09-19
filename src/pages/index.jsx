@@ -12,7 +12,7 @@ const  Index = (props) => {
       </Head>
       <Header />
       <h1>Next.jsで学ぶreact講座</h1>
-      <p1>json placeholderでAPIを叩いてみるよ</p1>
+      <p>json placeholderでAPIを叩いてみるよ</p>
     </div>
   )
 }
