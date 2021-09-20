@@ -1,4 +1,4 @@
-const { useUser } = require("src/hooks/useUser");
+import { useUser } from "src/hooks/useUser";
 
 export const UserCompornent = () => {
   const{data,error,isLoading} =  useUser();
