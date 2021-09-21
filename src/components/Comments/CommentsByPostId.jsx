@@ -3,7 +3,7 @@ import { useCommentsByPostsId } from "src/hooks/useFetchArray"
  
 
 export const CommentsByPostId = (props)=>{
-  const {data,error,isLoading,isEmpty} = useCommentsByPostsId(props.id)
+  const {data,error,isLoading,isEmpty} = useCommentsByPostId(props.id)
 
   if(isLoading){
     return <div>ローディング中です</div>
