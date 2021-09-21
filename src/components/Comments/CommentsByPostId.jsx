@@ -18,17 +18,19 @@ export const CommentsByPostId = (props)=>{
   }
 
   return (
-    <ol>
-      {data?.map((comment)=>{
-        return(
-          <li key={comment.id}>
-            <Link  href={`/comments/${comment.id}`}> 
-              <a>{comment.body} </a>
-            </Link>
-          </li>
-        )
-      })}
-    </ol>
+    <div>
+      <h2>Comments</h2>
+      <ol>
+        {data?.map((comment)=>{
+          return(
+            <li key={comment.id}>
+              <Link  href={`/comments/${comment.id}`}> 
+                <a>{comment.body} </a>
+              </Link>
+            </li>
+          )
+        })}
+      </ol>
+    </div>
   )
-
 }

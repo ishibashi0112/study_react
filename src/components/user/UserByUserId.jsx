@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { fetcher } from "src/utils/fetcher";
 import useSWR from "swr";
 
@@ -18,7 +19,12 @@ export const UserByUserId = (props)=> {
   }
 
   return(
-   <div>Created by {data?.name}</div>
+    <div>
+      Created by :
+      <Link href={`/users/${data.id}`}>
+       <a>{data?.name}</a>
+      </Link>
+    </div>
   )
 
 
