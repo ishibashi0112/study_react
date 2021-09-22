@@ -8,7 +8,7 @@ export const Header = () => {
     {href: "/comments", label: "Commnets"},
   ]
   return (
-    <header className="flex justify-center items-center border-b  m-full h-24">
+    <header className="flex justify-center items-center border-b  m-full h-24 mb-4">
       {NAV_ITEMS.map((item) => {
         return (
           <Link key={item.href} href={item.href}>
