@@ -1,6 +1,4 @@
 import Link from "next/link"
-import Classes from "src/components/Header/Header.module.css"
-// import classes from '/Footer.module.css'
 
 export const Header = () => {
   const NAV_ITEMS = [
@@ -10,11 +8,11 @@ export const Header = () => {
     {href: "/comments", label: "Commnets"},
   ]
   return (
-    <header className={Classes.header}>
+    <header className="flex justify-center items-center border-b  m-full h-24">
       {NAV_ITEMS.map((item) => {
         return (
           <Link key={item.href} href={item.href}>
-            <a className={Classes.ancher}>{item.label}</a>
+            <a className="inline-block py-2 px-6 text-xl hover:text-blue-500">{item.label}</a>
           </Link> 
         )
       })}
