@@ -11,7 +11,7 @@ export const UserCompornent = () => {
   if(error){
     return <div>{error.message}</div>
   }
-
+  console.log(data);
   return(
     <div>
       <h1 className="font-bold text-3xl">{data?.name}</h1>

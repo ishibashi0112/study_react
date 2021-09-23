@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Header } from 'src/components/Header';
 import {UsersComponent} from "src/components/users"
 
-const  Users = () =>{
+const  Users = (props) =>{
   return (
     <div>
       <Head>
