@@ -15,12 +15,13 @@ export const getStaticProps =  async () => {
         [COMMENTS_API_URL]: commentsData,
       }
     },
+    revalidate: 1
   };
 };
 
 const  Comments = (props) =>{
   const {fallback} = props;
-
+ 
   return (
     <div>
       <Head>
