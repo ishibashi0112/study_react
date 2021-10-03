@@ -3,8 +3,7 @@ import { Header } from 'src/components/Header';
 import {Comments as CommentComponent} from "src/components/Comments"
 import { SWRConfig } from 'swr';
 
-export const getStaticProps =  async (ctx) => {
-  const {id} = ctx.query;
+export const getStaticProps =  async () => {
   const COMMENTS_API_URL = `https://jsonplaceholder.typicode.com/comments`;
   const comments = await fetch(COMMENTS_API_URL);
   const commentsData = await comments.json();
